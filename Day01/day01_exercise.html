@@ -1,0 +1,30 @@
+<script>
+  // alert("Selamat datang di aplikasi penjumlahan");
+  // // INPUT
+  // // prompt : pop-up menerima input user dalam bentuk tipe data string
+  // const inputNumberA = prompt("Masukkan angka pertama :");
+  // const inputNumberB = prompt("Masukkan angka kedua :");
+
+  // // PROCESS
+  // let result = inputNumberA + inputNumberB;
+  // // OUTPUT
+  // // alert : pop-up yang menampilkan value
+  // alert(result);
+
+  // Soal No 5 Slide 1
+  // Problem : Write a code to get difference between dates in days.
+  // INPUT : date1 = 2023-04-02, date2 = 2023-05-02
+  const date1 = new Date(prompt("Masukkan tgl pertama :"));
+  const date2 = new Date(prompt("Masukkan tgl kedua :"));
+  console.log(date1);
+  console.log(date2);
+  // PROSES
+  let different = Math.abs(date1.getTime() - date2.getTime());
+  let totalDays = different / (24 * 60 * 60 * 1000);
+  console.log("Check totalDays", totalDays);
+
+  // OUTPUT
+  alert(
+    `Range ${date1.toLocaleString()} and ${date2.toLocaleString()} is ${totalDays} days`
+  );
+</script>

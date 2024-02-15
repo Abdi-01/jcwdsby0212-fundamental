@@ -1,0 +1,25 @@
+<script>
+  // INPUT
+  const examValue = Number(prompt("Masukkan nilai exam :"));
+  console.log("Check INPUT", examValue, typeof examValue);
+  let result = "";
+  // PROSES
+  console.log(Boolean(examValue));
+  if (examValue) {
+    if (examValue >= 90) {
+      result = "GRADE A";
+    } else if (examValue >= 80 && examValue < 90) {
+      result = "GRADE B";
+    } else if (examValue >= 70 && examValue < 80) {
+      result = "GRADE C";
+    } else if (examValue >= 0 && examValue < 70) {
+      result = "GRADE D";
+    }
+  } else {
+    result = "Input wrong";
+  }
+
+  // OUTPUT : grade:string
+  console.log(result);
+  alert(result);
+</script>
